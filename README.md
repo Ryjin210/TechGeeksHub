@@ -1,4 +1,4 @@
-# TechGeeksHub
+# TechGeeksHub (Reworked/Revamped)
 
 My first repository in GitHub, make a website where tech enthusiasts can learn more about modern technologies
 especially perataining to Hardware/Software components that varies from android,desktop,and New Gadgets as well.
