@@ -1,0 +1,162 @@
+body {
+    background-image: url(21.jpg);
+    background-size: cover;
+}
+
+/* media query for Mobile Devices*/
+    .logo img {
+        width: 80px;
+        margin-top: 5zpx;
+    }
+    
+    .navbtn {
+       width: 100%;
+       margin-top: 10px;
+    }
+    
+    .nav {
+        height: 100%;
+        width: 0;
+        background-color: black;
+        position: fixed;
+        overflow-x: hidden;
+        z-index: 1;
+        transition: 500ms;
+    }
+    
+    .navstyle {
+        list-style: none;
+        font-family: helvetica;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    
+    .nav .closebtn {
+        margin-left: 180px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .nav li {
+        margin-top: 20px;
+    }
+    
+    .nav a {
+        text-decoration: none;
+        color: white;
+        font-size:21px;
+    }
+    
+    .main {
+        margin-top: 70px;
+    }
+    
+    .postcontainerintro {
+        width: 50%;
+    }
+
+    .card {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    }
+
+    .webfooter {    
+    height: 300px;
+    background-color: black;
+    padding-top: 15px;
+    padding-left: 26.5px;
+    }
+
+    .Flogoset1 {
+        display: block;
+        margin-left: 100px;
+        padding: 7px;
+      }
+    
+    .Flogoset2 {
+        display: block;
+        margin-left: 100px;
+        padding: 7px;
+      }
+
+    .footlogo1 {
+        margin-right:14px;
+    }
+    .footlogo3 {
+        margin-right:14px;
+    }
+
+    .btmFooter {
+        display: block;
+        margin-left: 115px;
+        margin-top: 15px;
+        margin-bottom: 10px
+    }
+
+    .linkInfo {
+        margin-left: 76px;
+    }
+    .linkInfo a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    
+     @media only screen and (max-width: 320px) {
+        .webfooter {    
+            height: 300px;
+            background-color: black;
+            padding-top: 15px;
+            padding-left: 0px;
+            }
+    }
+
+    @media only screen and (min-width: 411px) {
+        .webfooter {    
+            background-color: black;
+            padding-top: 15px;
+            padding-left: 45px;
+            }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .webfooter {    
+            background-color: black;
+            padding-top: 55px;
+            }
+        
+            .Flogoset1 {
+                display: inline-flex;
+                margin-left: -270px;
+              }
+            
+            .Flogoset2 {
+                display: inline-flex;
+                margin-left: -5px;
+              }
+            
+              .footlogo1 {
+                margin-right: 25px;
+              }
+              .footlogo2 {
+                margin-right: 15px;
+              }
+              .footlogo3 {
+                margin-right: 25px;
+              }
+            
+              .btmFooter {
+                display: inline;
+                margin-left: 210px;
+                margin-top: 95px;
+                margin-bottom: 10px;
+                float: left;
+            }
+            .linkInfo {
+             float: left;
+             margin-top: 123px;
+             margin-left: 32px;
+            }
+    }

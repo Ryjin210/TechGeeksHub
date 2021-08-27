@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="Styles.css" >
+
+</head>
+
+<body>
+
+<header>
+
+<div class="row">
+    <div class="nav" id="nav-bar">
+        <ul class="navstyle">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+            <a href="#"><li> Home</li></a>
+            <a href="#"><li> Archives</li></a>
+            <a href="#"><li> About Us</li></a>
+            <a href="#"><li> Contact Us</li></a>
+        </ul>
+    </div>
+</div>
+
+<div class="logo">
+    <center><img src="Logo.png" alt="weblogo"></center>
+</div>
+<button class="navbtn" onclick="openNavBar()">&#9776;</button>
+</header>
+
+
+<div class="main">
+    <!-- Contents area -->
+
+    <div class="card">
+        <img src="noimg.png" alt="postimage">
+        <div class="card-body">
+          <h5 class="card-title">Article Content 1</h5>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+          <a href="#" class="btn btn-primary">Read Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="noimg.png" alt="postimage">
+        <div class="card-body">
+          <h5 class="card-title">Article Content 2</h5>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+          <a href="#" class="btn btn-primary">Read Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="noimg.png" alt="postimage">
+        <div class="card-body">
+          <h5 class="card-title">Article Content 3</h5>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+          <a href="#" class="btn btn-primary">Read Here</a>
+        </div>
+      </div>
+
+</div>
+
+
+<script>
+    function openNavBar() {
+        document.getElementById("nav-bar").style.width="250px";
+    }
+    function closeNavBar() {
+        document.getElementById("nav-bar").style.width="0";
+    }
+</script>
+
+</body>
+
+<footer>
+    <div class="webfooter">
+        
+        <span class="Flogoset1">
+        <img src="wp.png" width="40px" class="footlogo1">
+        <img src="fb.png" width="40px" class="footlogo2">
+        </span>
+        <span class="Flogoset2">
+        <img src="twt.png" width="40px" class="footlogo3">
+        <img src="rss.png" width="40px" class="footlogo4">
+        </span>
+        <span class="btmFooter">
+        <img src="logoBnw.png" width="80px" id="weblogofoot">
+        </span>
+        <span class="linkInfo">
+        <a href="#">About Us</a> &nbsp &nbsp <a href="">Contact Us</a>
+        </span>
+    </div>
+</footer>
+
+</html>
