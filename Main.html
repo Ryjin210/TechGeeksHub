@@ -13,8 +13,7 @@
 <body>
 
 <header>
-
-<div class="row">
+  <div class="row" id="firstrow">
     <div class="nav" id="nav-bar">
         <ul class="navstyle">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
@@ -24,12 +23,24 @@
             <a href="#"><li> Contact Us</li></a>
         </ul>
     </div>
-</div>
 
-<div class="logo">
-    <center><img src="Logo.png" alt="weblogo"></center>
-</div>
-<button class="navbtn" onclick="openNavBar()">&#9776;</button>
+    <div class="topnav">
+    <div class="navpiclogo"> 
+      <img src="Logo.png" alt="upperlogo">
+    </div>
+    <div class="navtxtlogo"> 
+      <img src="bwlogo.png" alt="upperlogo">
+    </div>  
+    <div class="button">
+      <button class="navbtn" onclick="openNavBar()">&#9776;</button>
+    </div>  
+    </div>
+    
+    
+
+  
+
+</div> 
 </header>
 
 
@@ -37,38 +48,46 @@
     <!-- Contents area -->
 
     <div class="card">
-        <img src="noimg.png" alt="postimage">
+        <img src="noimg.png" alt="postimage" class="postimage">
         <div class="card-body">
           <h5 class="card-title">Article Content 1</h5>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-          <a href="#" class="btn btn-primary">Read Here</a>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting <a href="#" class="postlink">more here</a></p>
+          <span class="btnpost"><a href="#" class="btn btn-primary">Read Here</a></span>
         </div>
       </div>
 
       <div class="card">
-        <img src="noimg.png" alt="postimage">
+        <img src="noimg.png" alt="postimage" class="postimage">
         <div class="card-body">
           <h5 class="card-title">Article Content 2</h5>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-          <a href="#" class="btn btn-primary">Read Here</a>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting <a href="#" class="postlink">more here</a></p>
+          <span class="btnpost"><a href="#" class="btn btn-primary">Read Here</a></span>
         </div>
       </div>
 
       <div class="card">
-        <img src="noimg.png" alt="postimage">
+        <img src="noimg.png" alt="postimage" class="postimage">
         <div class="card-body">
           <h5 class="card-title">Article Content 3</h5>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-          <a href="#" class="btn btn-primary">Read Here</a>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting <a href="#" class="postlink">more here</a></p>
+          <span class="btnpost"><a href="#" class="btn btn-primary">Read Here</a> </span>
         </div>
       </div>
 
+      <div class="card">
+        <img src="noimg.png" alt="postimage" class="postimage">
+        <div class="card-body">
+          <h5 class="card-title">Article Content 4</h5>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting <a href="#" class="postlink">more here</a></p>
+          <span class="btnpost"><a href="#" class="btn btn-primary">Read Here</a> </span>
+        </div>
+      </div>
 </div>
 
 
 <script>
     function openNavBar() {
-        document.getElementById("nav-bar").style.width="250px";
+        document.getElementById("nav-bar").style.width="73%";
     }
     function closeNavBar() {
         document.getElementById("nav-bar").style.width="0";
