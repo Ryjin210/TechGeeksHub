@@ -5,49 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">    
     <link rel="stylesheet" type="text/css" media="screen" href="Styles.css" >
-
+    <script src="TGHscript.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
 </head>
 
 <body>
 
-<header>
+
+<header>  
   <div class="row" id="firstrow">
-    <div class="nav" id="nav-bar">
-        <ul class="navstyle">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
-            <a href="#"><li> Home</li></a>
-            <a href="#"><li> Archives</li></a>
-            <a href="#"><li> About Us</li></a>
-            <a href="#"><li> Contact Us</li></a>
+
+    <div class="navb" id="nav-bar">
+        <ul class="navstyle">                       
+          <a href="#"><li>            
+            <span class="iconify navicon" data-icon="heroicons-solid:home" style="color: white;"></span>Home</li></a>            
+            <a href="#"><li>
+            <span class="iconify navicon" data-icon="heroicons-solid:folder" style="color: white;"></span>Archives</li></a>
+            <a href="#"><li>
+            <span class="iconify navicon" data-icon="heroicons-solid:information-circle" style="color: white;"></span>About Us</li></a>
+            <a href="#"><li>
+            <span class="iconify navicon" data-icon="heroicons-solid:phone" style="color: white;"></span>Contact Us</li></a>
         </ul>
-    </div>
+    </div>   
 
     <div class="topnav">
-    <div class="navpiclogo"> 
-      <img src="Logo.png" alt="upperlogo">
-    </div>
-    <div class="navtxtlogo"> 
-      <img src="bwlogo.png" alt="upperlogo">
-    </div>  
-    <div class="button">
-      <button class="navbtn" onclick="openNavBar()">&#9776;</button>
-    </div>  
+
+      <div class="navpiclogo"> 
+        <img src="Logo.png" alt="upperlogo">
+      </div>    
+
+      <div class="navtxtlogo"> 
+          <img src="bwlogo.png" alt="upperlogo">
+      </div>  
+
+      <div class="buttonnav" id="bnav" onclick="myFunction(this); toggleNav();">
+          <div class="L1"></div>
+          <div class="L2"></div>
+          <div class="L3"></div>
+      </div>
+
     </div>
     
+    <div class="container dsknav">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">          
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+    </div>
     
-
-  
-
-</div> 
+  </div> 
 </header>
+
 
 
 <div class="main">
     <!-- Contents area -->
 
-    <div class="card">
+    <div class="p-5 mb-4 rounded-3 jbtron">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+      </div>
+    </div>
+
+    <div class="post-cards">
+
+      <div class="card">
         <img src="noimg.png" alt="postimage" class="postimage">
         <div class="card-body">
           <h5 class="card-title">Article Content 1</h5>
@@ -64,6 +96,7 @@
           <span class="btnpost"><a href="#" class="btn btn-primary">Read Here</a></span>
         </div>
       </div>
+    
 
       <div class="card">
         <img src="noimg.png" alt="postimage" class="postimage">
@@ -82,17 +115,12 @@
           <span class="btnpost"><a href="#" class="btn btn-primary">Read Here</a> </span>
         </div>
       </div>
+
+      </div>
+
 </div>
 
 
-<script>
-    function openNavBar() {
-        document.getElementById("nav-bar").style.width="73%";
-    }
-    function closeNavBar() {
-        document.getElementById("nav-bar").style.width="0";
-    }
-</script>
 
 </body>
 
