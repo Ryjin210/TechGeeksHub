@@ -3,7 +3,7 @@ body {
     background-size: cover;
 }
 
-/* media query for Mobile Devices*/
+/* Default Media Query (320px devices)*/
     *,
     ::before,
     ::after {
@@ -11,6 +11,32 @@ body {
     margin: 0;
     box-sizing: border-box;
     }
+    
+    
+    .L1, .L2, .L3 {
+        width: 35px;
+        height: 5px;
+        background-color: #FFFFFF;
+        margin: 6px 0;
+        transition: 500ms;
+    }
+
+    .change .L1 {
+        -webkit-transform: rotate(137deg) translate(-9px, -15px);
+        transform: rotate(137deg) translate(-9px, -15px);
+        width: 20px;
+    }
+
+    .change .L2 {
+    opacity: 0;            
+    }
+
+    .change .L3 {
+        -webkit-transform: rotate(-137deg) translate(-8px, 15px);
+        transform: rotate(-137deg) translate(-8px, 15px);
+        width: 20px;;
+    }
+
     html,body {
         width: 100%;
         height: 100%;
@@ -26,16 +52,11 @@ body {
         z-index: 1;
     }
 
-    .navbtn{
-        margin-top: 8px;
-        margin-left: 40px;
-        margin-right: 15px;
-        background: transparent;
-        color: white; 
-        position: absolute;
-        right:0;
-        padding-left: 5px;
-        padding-right: 5px;
+    .buttonnav {
+        position: fixed;
+        right: 0;
+        margin-right: 30px;
+        margin-top: 5px;
     }
 
     .topnav {
@@ -43,6 +64,13 @@ body {
         margin-top: 10px;
         margin-bottom: 10px;
         
+    }
+
+    
+    .navstyle {
+        list-style: none;
+        font-family: helvetica;
+        font-weight: bold;
     }
 
     .navpiclogo img {
@@ -56,34 +84,35 @@ body {
         margin-left: 10px;
     }
     
-    .nav {
+    .navb {
         height: 100%;
-        width: 0px;
+        width: 0;                
         background-color: black;
         position: fixed;
         overflow-x: hidden;
         z-index: 1;
         transition: 500ms;
+        margin-top: 65px;
     }
     
-    .navstyle {
-        list-style: none;
-        font-family: helvetica;
-        font-weight: bold;
-        margin-top: 15px;
+    .navicon {
+        margin-bottom: 7px;
+        margin-right: 10px;
     }
+
     
-    .nav .closebtn {
-        margin-left: 230px;
+    .navb .closebtn {
+        margin-left: 186px;
         font-size: 45px;
         cursor: pointer;
     }
     
-    .nav li {
-        margin-top: 20px;
+    .navb li {
+        margin-left: 20px;
+        padding-top: 50px;
     }
     
-    .nav a {
+    .navb a {
         text-decoration: none;
         color: white;
         font-size:21px;
@@ -114,13 +143,13 @@ body {
         display: block;
         margin-left: 100px;
         padding: 7px;
-      }
+    }
     
     .Flogoset2 {
         display: block;
         margin-left: 100px;
         padding: 7px;
-      }
+    }
 
     .footlogo1 {
         margin-right:14px;
@@ -144,6 +173,14 @@ body {
         color: white;
         font-weight: bold;
     }
+
+    .dsknav {
+        display: none;    
+    }
+    .jbtron {
+        width: 0px;
+    }
+
     /**/
     /*Media queries for Small-Medium sized Mobile platform*/
     @media only screen and (max-width: 320px) {
@@ -153,6 +190,12 @@ body {
             padding-top: 15px;
             padding-left: 0px;
             }
+            .dsknav {
+                display: none;
+            }
+            .jbtron {
+                width: 0px;
+            }
     }
 
     /*Media queries for Large sized Mobile platforms*/
@@ -161,6 +204,12 @@ body {
             background-color: black;
             padding-top: 15px;
             padding-left: 45px;
+            }
+            .dsknav {
+                display: none;
+            } 
+            .jbtron {
+                width: 0px;
             }
     }
 
@@ -175,7 +224,11 @@ body {
             .main {
                 margin-left: 60px;
             }
-
+            
+            .navb li {
+                margin-left: 40px;
+            }
+            
             .postcontainerintro {
                 width: 50%;
             }
@@ -227,21 +280,71 @@ body {
                 float: left;
                 margin-top: 123px;
                 margin-left: 32px;
-                }               
+                }      
+                .dsknav {
+                    display: none;
+                }         
+                .jbtron {
+                    width: 0px;
+                }
                
-                
-                
-
     }
-    @media only screen and (min-width: 1080px) {
-        .nav {
+    @media only screen and (min-width: 1024px) {
+        .navb {
             display: none;
         }
-        .navbtn {
+        .buttonnav {
             display: none;
         }
         .logo {
             display: none;
         }
-
+        .topnav {
+            display: none;
+        }
+        .dsknav {
+            display: inline;
+        }
+        .webfooter {
+            padding-left: 170px;
+        }
+        .jbtron {
+            width: 900px;
+            margin-bottom: 50px;
+        }
     }
+
+    @media only screen and (min-width: 1440px) {
+        
+        .navb {
+            display: none;
+        }
+        .buttonnav {
+            display: none;
+        }
+        .logo {
+            display: none;
+        }  
+        .post-cards {
+            margin-left: 95px;
+            display: block;
+        }
+        .card {
+            width: 18%;            
+            margin-left: 50px;
+        }
+        .webfooter {
+            padding-left: 370px;         
+        }
+        .jbtron {
+            width: 1090px;
+            margin-left: 143px;
+            margin-bottom: 50px;
+        }
+    }
+
+
+    /*bootstrap css*/
+
+    
+    
