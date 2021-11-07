@@ -8,5 +8,3 @@ Goals throughout the challenge:
 - create a fully responsive website
 - practice designing UI and Function of the site
 - might try importing Jscript and Bootstrap as well
-
-more to add on the following days. still working on the timeline project. will be posted soon
